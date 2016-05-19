@@ -1,0 +1,89 @@
+html, body{
+  height: 100%;
+  background: #F4FAFA;
+}
+h2{
+  font-size:24px;
+  font-weight:normal;
+}
+button.active{
+  /*background: #fff;
+  color: #009688;*/
+  border-bottom: 4px solid #009688;
+}
+button.active:hover{
+  color: #fff;
+}
+.fill{
+  flex: 1 1 auto;
+}
+.app-state{
+  margin: 15px;
+  flex: 1;
+}
+.home{
+  flex: 1;
+}
+md-content{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-top:70px;
+}
+footer{
+  flex: 0 0 60px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+.md-primary{
+  background:#101010 !important;
+  color: #FFFFFF;
+  
+}
+md-sidenav-layout {
+  
+  height:100%;
+}
+md-sidenav {
+    /*position: absolute;
+    top: 0;
+    bottom: 0;*/
+    background: white;
+    width: 265px;
+    z-index: 2;
+    box-shadow: 1px 0 6px -2px rgba(0, 0, 0, 0.4);
+    padding-top: 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+md-toolbar {
+  position:fixed;
+  top:0;
+  z-index:1;
+}
+
+md-toolbar button{
+  height:100%;
+  border-radius:0 !important;
+}
+
+md-toolbar::after {
+    z-index:1;
+    content: "";
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: -5px;
+    width: 100%;
+    height: 5px;
+    pointer-events: none;
+    opacity: 1;
+    box-shadow: inset 0px 5px 6px -3px rgba(0, 0, 0, 0.4);
+    will-change: opacity;
+    transition: opacity 0.4s;
+}
